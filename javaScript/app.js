@@ -58,6 +58,77 @@
 
 
 
+// OBJECT 
+
+
+// let bioData = {
+//     Name : "Talha",
+//     Age : 23,
+//     class: "Web&App",
+//     getData : function (){
+//         console.log(this.Age);
+//     }
+// }
+// bioData.getData();
+// console.log(bioData);
+
+// 2nd Method 
+
+// let bioData = {
+//     Name : "Talha",
+//     Age : 23,
+//     class: "Web&App",
+//     getData  (){
+//         console.log(this.class);
+//     }
+// }
+// bioData.getData();
+// console.log(bioData);
+
+
+// 3rd way 
+
+// let myData = {
+//     myName : {
+//         fName : "Talha",
+//         MName : "Ali",
+//         lName: "Akber"
+//     },
+//     age: 23,
+//     class: "web&app"
+// }
+
+// console.log(myData);
+
+// console.log(myData.myName.MName);
+
+
+
+// fat arrow function main this property nhi use kr skty 
+
+// const obj = {
+//     myAge : 23,
+//     myName: () => {
+//         console.log(this);
+//     }
+// }
+
+// obj.myName()
+
+
+// let myBio = {
+//     myName : {
+//         fName : "Talha",
+//         MName : "Ali",
+//         lName: "Akber"
+//     },
+//     age: 23,
+//     class: "web&app",
+//     getData () {
+//         console.log(`my name is ${this.myName.fName} & my age is ${this.age}`);
+//     }
+// }
+// myBio.getData()
 
 
 
@@ -66,8 +137,7 @@
 
 
 
-
-
+// ===============================================================
 
 
 
