@@ -131,6 +131,8 @@
 // myBio.getData()
 
 
+// Destructuring in Es6 
+
 
 
 
@@ -140,15 +142,34 @@
 // ===============================================================
 
 
+// Asynchronous
+// =========================================================================
+// promises
+// GET https://icanhazdadjoke.com/
 
+const jokes = document.querySelector("#jokes")
+const jokebtn = document.querySelector("#jokebtn")
 
+const generatejokes = () => {
+    setTimeout(() => {
+        jokes.innerHTML = 'New Joke is loading...'
+        const setHeader = {
+            headers: {
+                Accept: "application/json"
+            }
+        }
+        fetch('https://icanhazdadjoke.com/', setHeader)
+            .then((res) => res.json())
+            .then((data) => {
+                jokes.innerHTML = data.joke
+            }).catch((err) => err)
+    }, 1000);
+}
+jokebtn.addEventListener('click', generatejokes)
 
+generatejokes()
 
-
-
-
-
-
+// ===============================================================================
 
 
 
